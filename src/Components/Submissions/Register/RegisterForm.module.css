@@ -1,0 +1,164 @@
+.form-container {
+  height: 80vh;
+  width: 65%;
+  padding-right: 20px;
+  background-color: transparent;
+  overflow-y: scroll;
+}
+
+.main-row {
+  width: 100%;
+  display: flex;
+  place-content: center;
+}
+
+.main-row form {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* margio */
+  transition: all 0.3s ease;
+}
+
+.form-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
+  transition: all 0.3s ease;
+}
+
+.form-way {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 1.8rem;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.form-select {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.form-group label,
+.form-select label,
+.form-upload label {
+  color: white;
+  margin: 10px 0px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form-group .form-control {
+  transition: all 0.3s ease;
+  height: 30px;
+  border: white solid 1px;
+  background: none;
+  padding: 5px 20px;
+}
+
+.optional {
+  width: 100%;
+  height: 43px;
+  background: none;
+  outline: none;
+  border: white solid 1px;
+  font-size: 13px;
+  color: gray;
+  padding-left: 1rem;
+}
+
+input[type='date'] {
+  color: white;
+}
+
+/* .form-select .form-control {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 150px;
+  height: 2.8rem;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 0.075rem solid var(--FormBorder);
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+} */
+
+.form-control::placeholder {
+  color: #aaaaaa;
+  font-weight: 300;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #aaaaaa;
+}
+
+.form-control:focus + label {
+  color: #aaaaaa;
+}
+
+.form-group .form-control:hover,
+.form-select .form-control:hover {
+  background: #1f2e44;
+  border-color: #aaaaaa;
+  color: white;
+}
+
+input[type='text'] {
+  color: white;
+}
+
+.form-group .invalid-feedback,
+.form-select .invalid-feedback,
+.form-upload .invalid-feedback {
+  transition: all 0.3s ease;
+  color: #aaaaaa;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.btn-submit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  background-color: #1fbee1;
+  color: white;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+}
+
+.btn-submit:disabled:hover {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1080px) {
+  .form-container {
+    width: 85%;
+    overflow-y: visible;
+  }
+}

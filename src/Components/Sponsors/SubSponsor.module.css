@@ -1,0 +1,112 @@
+/* @import '../../Styles/colors';
+@import '../../Styles/fonts'; */
+
+.logo {
+  width: auto;
+  height: auto;
+  /* object-fit: contain; */
+  text-align: center;
+
+}
+.logo1{
+  width: auto;
+  height: auto;
+  /* object-fit: contain; */
+  text-align: center;
+  padding:30px;
+
+}
+.subContainer {
+  height: 100%;
+  width: 100%;
+}
+
+  .image {
+    width: 100%;
+    height: 300px;
+    box-shadow: 50px 50px 50px 50px #26688d inset, -50px 50px 50px 50px #26688d inset;
+  }
+  .heading {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    text-align: center;
+    
+  }
+  .heading h1 {
+    color: white;
+    font-family: var(--Poppins);
+    font-size: 80px;
+    font-weight: 800;
+  }
+
+  .flexcontainer {
+      /* display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; */
+      width: 100%;
+      height:100vh;
+      text-align: center;
+  }
+  .Sponsors h2 {
+    font-family: var(--Poppins);
+          color: rgb(78, 72, 72);
+          font-size: 70px;
+          font-weight: 800;
+          padding-left: 30px;
+          padding-top: 30px;
+          padding-bottom: 15px;
+        }
+        /* .media {
+          float: right;
+          padding: 30px;
+        } */
+      
+      .main h2 {
+        font-family: var(--Poppins);
+          color: rgb(78, 72, 72);
+          font-size: 70px;
+          font-weight: 800;
+          padding-left: 30px;
+          padding-top: 30px;
+          padding-bottom: 15px;
+        }
+        /* .media1 {
+          float: right;
+          padding: 30px;
+        } */
+      
+  
+
+@media (max-width: 1080px) {
+  .subContainer .image {
+      width: auto;
+      height: 200px;
+    }
+    .heading {
+      top: 50px;
+      left: 70px;
+    }
+    .heading h1 {
+        font-size: 65px;
+      }
+    
+   
+    .maindiv .Sponsors {
+          /* padding-right: 30px; */
+    }
+    .Sponsors h2 {
+          
+            padding-right: 10px;
+            padding-bottom: 15px;
+            font-size: 40px;
+          }
+        
+    .main h2 {
+            padding-bottom: 15px;
+            font-size: 40px;
+          }
+        
+ }
+
+

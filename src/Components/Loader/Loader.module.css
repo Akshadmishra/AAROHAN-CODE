@@ -1,0 +1,229 @@
+/* @import '~compass-mixins/lib/compass/css3'; */
+
+.container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 84px;
+  box-sizing: border-box;
+}
+
+.loader {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 58px;
+  height: 102px;
+  margin-top: -43px;
+  margin-left: -29px;
+  font-family: var(--Roboto);
+  line-height: 42px;
+  overflow: hidden;
+  opacity: 0;
+  animation: Loader 5s ease-in-out infinite;
+  transform: scale(1.7, 1.7);
+}
+
+.loader * {
+  display: block;
+  position: absolute;
+}
+
+@keyframes Loader {
+  5%,
+  100% {
+    opacity: 1;
+  }
+  30% {
+    width: 58px;
+    margin-left: -29px;
+  }
+  40%,
+  82% {
+    width: 282px;
+    margin-left: -100px;
+  }
+  86%,
+  100% {
+    width: 4px;
+    margin-left: 2px;
+  }
+}
+
+.loader .rectangle {
+  left: 0;
+  bottom: 20px;
+  width: 58px;
+  height: 66px;
+  border: 2px solid #313131;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.loader .rectangle span {
+  left: 24px;
+  bottom: 3px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #313131;
+  animation: FillSpan 5s ease-in-out infinite;
+}
+
+.loader .rectangle.outlines {
+  animation: Outlines 5s ease-in-out infinite;
+}
+
+.loader .rectangle.fill {
+  height: 4px;
+  border-color: transparent;
+  background-color: #313131;
+  animation: Fill 5s ease-in-out infinite;
+}
+
+.loader .rectangle.fill span {
+  color: #fff;
+}
+
+@keyframes Outlines {
+  82% {
+    width: 58px;
+    height: 66px;
+    bottom: 20px;
+  }
+  85%,
+  100% {
+    width: 4px;
+    bottom: 0;
+  }
+  85%,
+  86% {
+    height: 86px;
+    border-width: 2px;
+  }
+  89%,
+  100% {
+    height: 0;
+    border-width: 0;
+  }
+}
+
+@keyframes Fill {
+  30%,
+  100% {
+    height: 66px;
+  }
+  30% {
+    background-color: #313131;
+  }
+  40%,
+  100% {
+    background-color: #d96d1b;
+  }
+  82% {
+    width: 58px;
+    height: 66px;
+    bottom: 20px;
+  }
+  85%,
+  100% {
+    width: 4px;
+    bottom: 0;
+  }
+  85%,
+  86% {
+    height: 86px;
+    border-width: 2px;
+  }
+  89%,
+  100% {
+    height: 0;
+    border-width: 0;
+  }
+}
+
+@keyframes FillSpan {
+  80% {
+    left: 24px;
+  }
+  84%,
+  100% {
+    left: -34px;
+  }
+  82% {
+    bottom: 3px;
+  }
+  85%,
+  100% {
+    bottom: 9px;
+  }
+}
+
+.loader .rinkin_coffee {
+  left: -220px;
+  top: 19px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  animation: rinkinCoffee 5s ease-in-out infinite;
+}
+
+.loader .rinkin_coffee span {
+  display: inline-block;
+  position: static;
+  color: #313131;
+}
+
+.loader .rinkin_coffee span.rinkin {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.loader .rinkin_coffee span.coffee {
+  font-family: var(--Eczar);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@keyframes rinkinCoffee {
+  30% {
+    left: -220px;
+  }
+  40%,
+  82% {
+    left: 62px;
+  }
+  86%,
+  100% {
+    left: -260px;
+  }
+}
+
+.loader .slogan {
+  right: 2px;
+  bottom: 0;
+  width: 115px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #313131;
+  opacity: 0;
+  animation: Slogan 5s ease-in-out infinite;
+}
+
+@keyframes Slogan {
+  42% {
+    opacity: 0;
+  }
+  48%,
+  100% {
+    opacity: 1;
+  }
+  81% {
+    right: 2px;
+  }
+  86%,
+  100% {
+    right: 15px;
+  }
+}

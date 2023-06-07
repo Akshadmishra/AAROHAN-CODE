@@ -1,0 +1,22 @@
+.icons {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  flex-direction: column;
+  .iconsMargin {
+    margin: 2px 0px;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .icons {
+    display: none;
+  }
+}

@@ -1,0 +1,170 @@
+.regContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--linearBlue);
+  position: relative;
+  font-family: var(--Montserrat);
+
+  .regFlexContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .regFlexLeft {
+      width: 50%;
+      h1 {
+        text-align: center;
+        font-family: var(--Poppins);
+        font-weight: 800;
+        font-size: 65px;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    .regFlexRight {
+      width: 50%;
+      height: 100vh;
+      background-color: #31425a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .regRightTopFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 68%;
+        margin-bottom: 20px;
+
+        .regRightTopFlexLeft {
+          display: flex;
+          align-items: center;
+        }
+
+        .formThumb {
+          height: 45px;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+
+        .formThumbHead {
+          font-weight: 500;
+          color: white;
+          margin-left: 10px;
+        }
+
+        .signOut {
+          background-color: #1fbee1;
+          border: none;
+          padding: 10px 20px;
+          color: white;
+        }
+
+        .signOut:hover {
+          color: black;
+          background-color: white;
+          cursor: pointer;
+        }
+      }
+
+      .signInContainer {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .authText {
+          color: white;
+          font-size: 24px;
+          font-weight: 500;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+
+        .signIn {
+          background-color: #1fbee1;
+          font-size: 18px;
+          font-weight: 500;
+          border: none;
+          padding: 10px 40px;
+          color: white;
+          margin-top: 20px;
+        }
+
+        .signIn:hover {
+          color: black;
+          background-color: white;
+          cursor: pointer;
+        }
+
+        .authBottom {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 20px;
+          width: 200px;
+
+          a {
+            text-decoration: none;
+            text-align: center;
+            background-color: white;
+            color: black;
+            margin-right: 1px;
+          }
+          a:hover {
+            color: white;
+            background-color: #1fbee1;
+          }
+        }
+      }
+    }
+  }
+  .regFormLeft {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+}
+
+@media (max-width: 1080px) {
+  .regContainer {
+    overflow: auto;
+    overflow-x: hidden;
+    background: #31425a;
+
+    .regFlexContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #31425a;
+      .regFlexLeft {
+        width: 100%;
+        h1 {
+          font-size: 40px;
+        }
+      }
+      .regFlexRight {
+        width: 100%;
+        .regRightTopFlex {
+          width: 90%;
+        }
+      }
+    }
+    .regFormLeft {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 469px) {
+  .regContainer {
+    .regFlexContainer {
+      .regFlexLeft {
+        margin-top: 10px;
+        h1 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}

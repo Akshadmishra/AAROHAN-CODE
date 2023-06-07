@@ -1,0 +1,33 @@
+.form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: whitesmoke;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.7rem 0;
+  border-radius: 15px;
+  font-family: var(--Montserrat);
+}
+
+.form-control span {
+  color: #31425a;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-control:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.form-control:hover,
+.form-control:hover span {
+  color: white;
+}
+
+.form-control input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}

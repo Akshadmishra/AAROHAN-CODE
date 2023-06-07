@@ -1,0 +1,105 @@
+.footerContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--matteBlack);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  position: relative;
+
+  .footerFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--Poppins);
+
+    .footerFlexLeft {
+      display: flex;
+
+      .footerFlexLeftLeft,
+      .footerFlexLeftRight {
+        h1 {
+          font-weight: 800;
+          font-size: 3.5rem;
+          letter-spacing: 0.1px;
+          color: var(--headerColor);
+        }
+        p {
+          color: #d1d1d1;
+          font-weight: 200;
+          font-size: 1.4rem;
+          margin-right: 30px;
+          cursor: pointer;
+        }
+      }
+      .footerFlexLeftRight {
+        margin-top: 85.5px;
+      }
+    }
+    .footerFlexRight {
+      margin-left: 30px;
+      h1 {
+        font-weight: 800;
+        font-size: 3.5rem;
+        letter-spacing: 0.1px;
+        color: var(--headerColor);
+      }
+      p {
+        color: #d1d1d1;
+        font-weight: 200;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .footerCopy {
+    font-family: var(--Montserrat);
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: #d1d1d1;
+    font-weight: 300;
+    letter-spacing: -1px;
+    font-size: 16px;
+    .footerAnchor {
+      text-decoration: none;
+      color: white;
+      letter-spacing: 0px;
+      font-weight: 700;
+      margin: 0px 5px;
+    }
+  }
+}
+
+@media (max-width: 885px) {
+  .footerContainer {
+    .footerFlexContainer {
+      margin-left: 10%;
+
+      .footerFlexLeft {
+        .footerFlexLeftLeft,
+        .footerFlexLeftRight {
+          h1 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 19px;
+            margin-right: 10px;
+          }
+        }
+        .footerFlexLeftRight {
+          margin-top: 68px;
+        }
+      }
+      .footerFlexRight {
+        margin-left: 0px;
+        h1 {
+          font-size: 45px;
+        }
+        p {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

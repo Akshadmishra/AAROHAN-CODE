@@ -1,0 +1,126 @@
+.galleryContainer {
+  background: linear-gradient(270deg, #e139d3, #52d5cb, #67a3dd);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  scroll-snap-align: center;
+  position: relative;
+
+  .galleryFlexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+
+    .galleryContainerLeft {
+      text-align: center;
+      width: 40%;
+      padding-left: 100px;
+      .galleryHeader {
+        font-family: var(--Poppins);
+        font-weight: 800;
+        font-size: 65px;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-family: var(--Roboto);
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        margin-top: 10px;
+      }
+      .galleryButton {
+        cursor: pointer;
+        background-color: white;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 20px;
+        width: 150px;
+        height: 35px;
+        color: black;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-left: 10px;
+        font-family: var(--Montserrat);
+        font-weight: 600;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+    }
+
+    .galleryContainerRight {
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+    }
+  }
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 13% 0%;
+  }
+  50% {
+    background-position: 88% 100%;
+  }
+  100% {
+    background-position: 13% 0%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .galleryContainer {
+    .galleryFlexContainer {
+      .galleryContainerLeft {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        .galleryHeader {
+          font-size: 45px;
+        }
+      }
+      .galleryContainerRight {
+        display: none;
+      }
+    }
+  }
+}

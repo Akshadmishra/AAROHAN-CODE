@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700');
+@import url('https://fonts.googleapis.com/css?family=Eczar');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+:root {
+  --headerColor: #fff2da;
+
+  --orange: #ff5b52;
+  --orangeCovid: #e63f26;
+  --cream: #ffecc6;
+  --orangeGradient: linear-gradient(13.68deg, #ff974f -8.64%, #ff5b52 59.75%);
+
+  --luminalGradient: linear-gradient(224.14deg, #ff6a51 13.37%, #fdaf3a 85.95%);
+
+  --linearBlue: linear-gradient(30deg, #13d5fe, #3793fd);
+  --luminalBlue: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
+
+  --luminalPink: linear-gradient(242.03deg, #e92c53 7.96%, #d71e88 81.56%);
+
+  --main-color: #d96d1b;
+  --main-gray: #313131;
+  --offWhite: rgb(243, 243, 243);
+
+  --coffeegradient: linear-gradient(253.36deg, #340606 0.62%, #25112c 99.34%);
+
+  --matteBlack: linear-gradient(253.36deg, #494747 0.62%, #000000 99.34%);
+
+  --golden: #fec32b;
+
+  --redGradient: linear-gradient(50deg, #ff0e48, #e99787);
+
+  --blue: #17dfb0;
+
+  --violetGradient: linear-gradient(50deg, #46407e, #30d2bd);
+
+  --blueGradient: linear-gradient(30deg, #06d1a3, #15eebd);
+
+  --greenBlue: linear-gradient(
+    253.36deg,
+    rgba(49, 19, 80, 0.86) 5.85%,
+    #376a80 36.74%,
+    #2b5292 47.16%,
+    #26688d 61.37%,
+    #1c2840 88.15%,
+    #25112c 99.34%
+  );
+
+  --Montserrat: 'Montserrat', sans-serif;
+  --Poppins: 'Poppins', sans-serif;
+  --Roboto: 'Roboto', sans-serif;
+  --Eczar: 'Eczar', sans-serif;
+  --Montserrat-Alt: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}

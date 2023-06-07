@@ -1,0 +1,156 @@
+.eventsContainer {
+  background: var(--redGradient);
+  height: 100vh;
+  width: 100vw;
+  .eventsFlex {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-around;
+    .eventsFlexLeft {
+      padding: 100px;
+      width: 37%;
+      h1 {
+        font-family: var(--Poppins);
+        font-weight: 800;
+        font-size: 65px;
+        color: var(--headerColor);
+        width: 60%;
+        line-height: 70px;
+        margin-bottom: 50px;
+      }
+      h3 {
+        font-family: var(--Roboto);
+        font-weight: 300;
+        font-size: 18px;
+        color: var(--headerColor);
+      }
+    }
+    .eventsFlexRight {
+      overflow-y: scroll;
+      height: 70vh;
+      width: 50%;
+      margin: 5%;
+      h4 {
+        font-family: var(--Poppins);
+        font-weight: 700;
+        font-size: 35px;
+        color: var(--headerColor);
+      }
+      h1 {
+        font-family: var(--Poppins);
+        font-weight: 700;
+        font-size: 25px;
+        color: var(--headerColor);
+        width: 60%;
+        margin: 10px 0px;
+      }
+      h3 {
+        font-family: var(--Roboto);
+        font-weight: 300;
+        font-size: 18px;
+        color: var(--headerColor);
+      }
+    }
+  }
+  .rightArrow {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 50%;
+  }
+  .leftArrow {
+    position: absolute;
+    cursor: pointer;
+    left: 20px;
+    top: 50%;
+  }
+  .carouselSelector {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 40%;
+  }
+  .carouselBlock {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: transparent;
+    margin: 5px;
+
+    h1 {
+      color: white;
+      font-family: var(--Roboto);
+      font-weight: 200;
+      font-size: 21px;
+      margin-left: 8.5px;
+      margin-top: 2px;
+    }
+  }
+  .active {
+    background-color: white;
+    h1 {
+      color: #ff0e48;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .eventsContainer {
+    overflow: auto;
+    height: auto;
+    .eventsFlex {
+      flex-wrap: wrap;
+      .eventsFlexLeft {
+        padding: 50px;
+        width: 80%;
+        h1 {
+          font-size: 45px;
+          width: 50%;
+          line-height: 50px;
+          margin-bottom: 20px;
+        }
+      }
+      .eventsFlexRight {
+        width: 75%;
+        margin: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .eventsContainer {
+    height: 100%;
+    .eventsFlex {
+      height: 100%;
+      padding-bottom: 50px;
+      .eventsFlexLeft {
+        width: 90%;
+        h1 {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+      .eventsFlexRight {
+        width: 75%;
+        margin: 5%;
+        overflow: visible;
+        height: 100%;
+      }
+    }
+    .rightArrow {
+      position: fixed;
+      right: 5px;
+    }
+    .leftArrow {
+      position: fixed;
+      left: 5px;
+    }
+    .carouselSelector {
+      left: 20%;
+      display: none;
+    }
+  }
+}
